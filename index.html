@@ -62,12 +62,11 @@
                 <form>
 
                     <div class="criteria-item form-group">
-                        <select id="dest">
-                            <option value="dest">Destination</option>
-                            <option value="paris">Paris</option>
-                            <option value="berlin">Berlin</option>
-                            <option value="rome">Rome</option>
-                        </select>
+                        <input type="text" name="term" id="search_term" class="form-control" placeholder="Where to....." />
+                    </div>
+                    
+                    <div class="criteria-item form-group">
+                        <input type="text" id="city" value="enter place" oninput="fetchhotels()"/>
                     </div>
 
                     <div class="criteria-item form-group">
@@ -79,21 +78,13 @@
                         </select>
                     </div>
 
-                    <div class="criteria-item form-group">
-                        <select required>
-                            <option value="">Duration</option>
-                            <option value="France">3 Dyas</option>
-                            <option value="Germany">7 Days</option>
-                            <option value="Italy">14 Days</option>
-                        </select>
-                    </div>
-
+                    
                     <div class="criteria-item form-group">
                         <input type="date" class="form-control" id="dateValidation" placeholder="Enter Date" required>
                     </div>
 
                     <div>
-                        <button type="submit" class="btn--cta btn--color" onclick="showPackages();">Find Perfect Holiday!</button>
+                        <button type="submit" class="btn--cta btn--color">Find Perfect Holiday!</button>
                     </div>
 
                 </form>
@@ -105,38 +96,35 @@
     <section id="packages">
 
 
-            <div id="packages" class="col-xs-12 col-sm-12 col-md-12"></div>
-            <div id="family-packages" class="col-xs-12 col-sm-12 col-md-12"></div>
+        <div id="packages" class="col-xs-12 col-sm-12 col-md-12"></div>
+        <div id="family-packages" class="col-xs-12 col-sm-12 col-md-12"></div>
+        
+        <div id="hotelpic"></div>
 
     </section>
     <!--*******LOCATIONS*******-->
     <section id="locations">
-        
-            <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="section-heading uppercase">Attraction Locater</h3>
-                    </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-heading uppercase">Attraction Locater</h3>
             </div>
-        <div class="row col-md-12">    
+        </div>
+        <div class="row col-md-12">
             <div id="map" class="col-xs-12 col-sm-12 col-md-8 bg-color-map section-column"></div>
-            
+
             <div class="col-xs-12 col-sm-12 col-md-4 bg-color-attraction attraction-shape">
                 <form>
-                     <div class="form-group">
-                        <select id="destin>
-                            <option value="city">----Select Destination----</option>
-                            <option value="paris">Paris</option>
-                            <option value="berlin">Berlin</option>
-                            <option value="rome">Rome</option>
-                        </select>
+                    <div class="criteria-item form-group">
+                        <input type="text" name="term" id="attLoc" class="form-control" placeholder="Where to....." />
                     </div>
 
-                    <div class="form-group">
-                        <select id="attraction">
-                            <option value="select">----Select Attraction----</option>
-                            <option value="cafe">Cafe</option>
-                            <option value="restauraunt">Resteraunt</option>
-                            <option value="drink">Bars/Pubs</option>
+                    <div class="criteria-item form-group ">
+                        <select id="attraction ">
+                            <option value="select ">What would you like to do?</option>
+                            <option value="cafe ">Cafe</option>
+                            <option value="restauraunt ">Resteraunt</option>
+                            <option value="drink ">Bars/Pubs</option>
                         </select>
                     </div>
                 </form>
@@ -153,47 +141,47 @@
 
 
     <!--*******FOOTER*******-->
-    <footer class="container-fluid">
-        <div id="footerdetails" class="row">
-            <div class="col-sm-8">
-                <h5 class="uppercase general-sub">The Holiday Selecter</h5>
-                <p class="inline-block">
+    <footer class="container-fluid ">
+        <div id="footerdetails " class="row ">
+            <div class="col-sm-8 ">
+                <h5 class="uppercase general-sub ">The Holiday Selecter</h5>
+                <p class="inline-block ">
                     Find the Perfect Holiday to meeting your wish
                 </p>
             </div>
 
 
-            <div class="col-sm-4">
-                <h5 class="uppercase general-sub">Social</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.facebook.com">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
+            <div class="col-sm-4 ">
+                <h5 class="uppercase general-sub ">Social</h5>
+                <ul class="list-inline social-links ">
+                    <li class="list-inline-item ">
+                        <a target="_blank " href="https://www.facebook.com ">
+                            <i class="fa fa-facebook " aria-hidden="true "></i>
+                            <span class="sr-only ">Facebook</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://twitter.com/?lang=en">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
+                    <li class="list-inline-item ">
+                        <a target="_blank " href="https://twitter.com/?lang=en ">
+                            <i class="fa fa-twitter " aria-hidden="true "></i>
+                            <span class="sr-only ">Twitter</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://ie.linkedin.com/">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
+                    <li class="list-inline-item ">
+                        <a target="_blank " href="https://ie.linkedin.com/ ">
+                            <i class="fa fa-linkedin " aria-hidden="true "></i>
+                            <span class="sr-only ">LinkedIn</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.instagram.com/">
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                            <span class="sr-only">Instagram</span>
+                    <li class="list-inline-item ">
+                        <a target="_blank " href="https://www.instagram.com/ ">
+                            <i class="fa fa-instagram " aria-hidden="true "></i>
+                            <span class="sr-only ">Instagram</span>
                         </a>
                     </li>
-                    <li class="list-inline-item">
-                        <a target="_blank" href="https://www.youtube.com/results?search_query=the+monkees">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
+                    <li class="list-inline-item ">
+                        <a target="_blank " href="https://www.youtube.com/results?search_query=the+monkees ">
+                            <i class="fa fa-youtube " aria-hidden="true "></i>
+                            <span class="sr-only ">YouTube</span>
                         </a>
                     </li>
                 </ul>
@@ -203,21 +191,28 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3e2rcmbHaheAH_Qgn22I8rnXoySvx2jE&callback=initMap"  type="text/javascript"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3e2rcmbHaheAH_Qgn22I8rnXoySvx2jE&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+
+    
+    <script type="text/javascript " src="assets/js/packages.js "></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js "></script>
+    <script type="text/javascript " async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3e2rcmbHaheAH_Qgn22I8rnXoySvx2jE&libraries=places&callback=activatePlacesSearch"></script>
+   
+
+    
     
    
-    <script type="text/javascript" src="assets/js/maps.js"></script>
-    <script type="text/javascript" src="assets/js/packages.js"></script>
+
 
 </body>
 
 </html>
 
-<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3e2rcmbHaheAH_Qgn22I8rnXoySvx2jE&libraries=places">*/*-->
+<!--
+<script type="text/javascript " src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3e2rcmbHaheAH_Qgn22I8rnXoySvx2jE&libraries=places&callback=initMap&callback=activatePlacesSearch"></script>
+<script type="text/javascript " src="assets/js/maps.js "></script>
+*/*-->
